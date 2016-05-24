@@ -10,12 +10,13 @@ requirements:
   build:
     - python
     - setuptools
-  run:
-    - python
-    - click
     - scipy
     - numpy
     - pandas
+    - click
+  run:
+    - python
+
     
 about:
   license: BSD
