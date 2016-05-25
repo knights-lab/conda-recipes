@@ -1,0 +1,23 @@
+﻿package:
+  name: ninja_trebuchet
+  version: "0.0.1"
+
+source:
+  git_url: https://github.com/knights-lab/NINJA-SHOGUN.git
+  git_rev: dc6f4c1e4a32629367c61fed73f05fb2343578c1
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - scipy
+    - numpy
+    - pandas
+    - click
+  run:
+    - python
+
+    
+about:
+  license: BSD
+  license_file: COPYING.txt
