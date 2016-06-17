@@ -3,8 +3,8 @@
   version: "0.0.1"
 
 source:
-  git_url: https://github.com/knights-lab/NINJA-SHOGUN.git
-  git_rev: dc6f4c1e4a32629367c61fed73f05fb2343578c1
+  git_url: https://github.com/bhillmann/NINJA-DOJO.git
+  git_rev: 2f3482154828a502cf3348e56fb1b067a2b590e2
 
 requirements:
   build:
