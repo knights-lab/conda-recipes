@@ -7,15 +7,11 @@ import os
 import sys
 import subprocess
 
-def print_realtime(process):
-    while True:
-        out = process.stdout.read(1)
-        if out and process.poll() != None:
-            break
-        else:
-            sys.stdout.write(out.decode())
-            sys.stdout.flush()
 
+def run_command(command):
+    process = subprocess.Popen(command, stdout=subprocess.PIPE)
+    while process.poll() is None:
+        sys.stdout.write(process.stdout.readline().decode())
 
 @click.command()
 @click.argument('recipe', type=click.Path(exists=True))
@@ -28,17 +24,21 @@ def build(recipe, output_dir):
     build_path = out.decode().rstrip()
     
     print(output_dir)
-    conda_convert_cmd = ['conda', 'convert', '-p', 'all', '-o', output_dir, build_path]
+    conda_convert_cmd = ['conda', 'convert', '-f', '-p', 'all', '-o', output_dir, build_path]
     
-    conda_convert_sp = subprocess.Popen(conda_convert_cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    print_realtime(conda_convert_sp)
+    # conda_convert_sp = subprocess.Popen(conda_convert_cmd, stdout=subprocess.PIPE)
+    # print_realtime(conda_convert_sp)
+    # conda_convert_sp.communicate()
+    run_command(conda_convert_cmd)
     
-    conda_upload_cmd = ['anaconda', 'upload', '--user', 'knights-lab', '--label', 'dev']
+    conda_upload_cmd = ['anaconda', 'upload', '--user', 'knights-lab', '--force', '--label', 'dev']
     for dirpath, dirnames, filenames in os.walk(output_dir):
         for filename in filenames:
             upload_file = os.path.join(dirpath, filename)
-            conda_upload_sp = subprocess.Popen(conda_upload_cmd + [upload_file], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-            print_realtime(conda_upload_sp)
+            # conda_upload_sp = subprocess.Popen(conda_upload_cmd + [upload_file], stdout=subprocess.PIPE)
+            # print_realtime(conda_upload_sp)
+            # conda_upload_sp.communicate()
+            run_command(conda_upload_cmd + [upload_file])
 
 
 
