@@ -1,14 +1,9 @@
 ﻿package:
   name: ninja_ops
-  version: '1.5.1'
+  version: "0.0.1"
 
 source:
   git_url: https://github.com/bhillmann/NINJA-OPS.git
-
-
-build:
-  entry_points:
-      - ninja_ops = ninja_ops.ninja:main
 
 requirements:
   build:
@@ -16,6 +11,4 @@ requirements:
     - setuptools
   run:
     - python
-    - argparse
-    - argcomplete
     - bowtie2
