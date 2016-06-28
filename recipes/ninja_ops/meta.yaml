@@ -4,7 +4,6 @@
 
 source:
   git_url: https://github.com/bhillmann/NINJA-OPS.git
-  git_rev: 4cad9134b1dc5d5fa0f4fea11d01e749fd4c8f6c
 
 requirements:
   build:
