@@ -23,7 +23,7 @@ def build(recipe, output_dir):
     out, err = conda_build_sp.communicate()
     build_path = out.decode().rstrip()
     
-    print(output_dir)
+    print(build_path)
     conda_convert_cmd = ['conda', 'convert', '-f', '-p', 'all', '-o', output_dir, build_path]
     
     # conda_convert_sp = subprocess.Popen(conda_convert_cmd, stdout=subprocess.PIPE)
