@@ -3,11 +3,9 @@
   version: "0.0.1"
 
 source:
-  git_url: https://github.com/bhillmann/NINJA-OPS.git
+  git_url: https://github.com/GabeAl/NINJA-OPS
 
 requirements:
-  build:
-    - python
-    - setuptools
   run:
-    - python
+  - python
+  - bowtie2
