@@ -11,6 +11,8 @@ requirements:
     - python
     - setuptools
     - gcc # [linux]
+    - trimmomatic
+    - flash
   run:
     - python
 
