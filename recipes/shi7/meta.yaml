@@ -24,4 +24,4 @@ about:
 test:
   commands:
     - shi7 --help
-    - shi7_trimmer --help
+    - shi7_learning --help
