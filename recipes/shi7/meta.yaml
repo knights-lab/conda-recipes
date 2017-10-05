@@ -1,0 +1,21 @@
+﻿package:
+  name: "shi7"
+  version: "0.9.3"
+
+source:
+  git_url: https://github.com/knights-lab/shi7.git
+  git_rev: cd6d6d5208c59c4d74f09eecf17b6d154491e893
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - gcc #[linux]
+    - trimmomatic
+    - flash
+  run:
+    - python
+    
+about:
+  license: AGPL
+  license_file: LICENSE.md
