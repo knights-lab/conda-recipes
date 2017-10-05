@@ -10,12 +10,18 @@ requirements:
   build:
     - python
     - setuptools
-    - gcc #[linux]
-    - trimmomatic
-    - flash
+    - gcc # [linux]
   run:
     - python
-    
+
+build:
+  number: 0
+
 about:
   license: AGPL
   license_file: LICENSE.md
+
+test:
+  commands:
+    - shi7 --help
+    - shi7_trimmer --help

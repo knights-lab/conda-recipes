@@ -14,8 +14,6 @@ cd src/
 
 make
 
-mkdir ${PREFIX}/bin/
-
 for i in $binaries; do cp $i $PREFIX/bin/$i && chmod +x $PREFIX/bin/$i; done
 
 # See
