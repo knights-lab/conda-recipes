@@ -11,10 +11,10 @@ requirements:
     - python
     - setuptools
     - gcc # [linux]
-    - trimmomatic
-    - flash
   run:
     - python
+    - trimmomatic
+    - flash
 
 build:
   number: 0
