@@ -1,0 +1,23 @@
+﻿package:
+  name: burst
+  version: "0.99.4a"
+
+source:
+  fn: burst_linux_DB15 #[linux]
+  url: https://github.com/knights-lab/BURST/releases/download/v0.99.4a/burst_linux_DB15 #[linux]
+  sha256: eb1d0c57ca28fc09edb5dcf820baabdc093506bfe7a35da64ca479f22d6e2fd3 #[linux]
+
+requirements:
+  build:
+  run:
+  - python >= 2.7
+  - bowtie2
+
+about:
+  summary: An ultrafast optimal aligner for mapping large NGS data to large genome databases.
+  home: https://github.com/knights-lab/BURST
+  license: AGPL
+
+test:
+  commands:
+  - burst15 --help
