@@ -1,18 +1,18 @@
 ﻿package:
   name: "shi7"
-  version: "0.9.2"
+  version: "0.9.3"
 
 source:
   git_url: https://github.com/knights-lab/shi7.git
-  git_rev: v0.9.2
+  git_rev: v0.9.3
 
 requirements:
   build:
-    - python
+    - python >=2.7
     - setuptools
     - gcc # [linux]
   run:
-    - python
+    - python >=2.7
     - trimmomatic
     - flash
 
