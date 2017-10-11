@@ -10,14 +10,8 @@ source:
 requirements:
   build:
   run:
-  - python >= 2.7
-  - bowtie2
 
 about:
   summary: An ultrafast optimal aligner for mapping large NGS data to large genome databases.
   home: https://github.com/knights-lab/BURST
   license: AGPL
-
-test:
-  commands:
-  - burst15 --help
