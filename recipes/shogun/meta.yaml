@@ -12,6 +12,7 @@ requirements:
     - python >=3
     - setuptools
     - pip
+    - sphinx
   run:
     - python >=3
     - click
