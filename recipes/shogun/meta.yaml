@@ -13,6 +13,12 @@ requirements:
     - setuptools
     - pip
     - sphinx
+    - click
+    - pyyaml
+    - numpy
+    - cytoolz
+    - pandas
+    - scipy
   run:
     - python >=3
     - click
