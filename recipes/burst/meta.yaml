@@ -3,9 +3,9 @@
   version: "0.99.4a"
 
 source:
-  fn: burst_linux_DB15 #[linux]
-  url: https://github.com/knights-lab/BURST/releases/download/v0.99.4a/burst_linux_DB15 #[linux]
-  sha256: eb1d0c57ca28fc09edb5dcf820baabdc093506bfe7a35da64ca479f22d6e2fd3 #[linux]
+  fn: burst-v0.99.4a-linux-64.tar.gz #[linux]
+  url: https://github.com/knights-lab/BURST/releases/download/v0.99.4a/burst-v0.99.4a-linux-64.tar.gz #[linux]
+  sha256: 2249b8e9a1cd11647b1855474e45dba2aefea630707dc5c48297b2ff6680d142 #[linux]
 
 requirements:
   build:

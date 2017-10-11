@@ -1,0 +1,17 @@
+﻿package:
+  name: utree
+  version: "v2.0c"
+
+source:
+  fn: utree-v2.0.c-linux-64.tar.gz #[linux]
+  url: https://github.com/knights-lab/UTree/releases/download/v2.0c/utree-v2.0.c-linux-64.tar.gz #[linux]
+  sha256: c6f84140ed60c100c6c98370f06be27afd72fc549a2c189482fc1a23d5309e0d #[linux]
+
+requirements:
+  build:
+  run:
+
+about:
+  summary: K-mer searching with trees
+  home: https://github.com/knights-lab/UTree
+  license: AGPL

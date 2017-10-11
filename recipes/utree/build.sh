@@ -1,8 +1,7 @@
 #!/bin/bash
-#!/bin/bash
 binaries="\
-burst12 \
-burst15 \
+utree-search_gg \
+utree-build_gg \
 "
 
 for i in $binaries; do cp $i $PREFIX/bin/$i && chmod +x $PREFIX/bin/$i; done
