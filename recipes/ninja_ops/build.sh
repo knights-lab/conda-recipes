@@ -1,13 +1,14 @@
 #!/bin/bash
+blob=master
 
-#$PYTHON setup.py install
+wget https://raw.githubusercontent.com/knights-lab/NINJA-OPS/${blob}/bin/ninja.py -O $PREFIX/bin/ninja.py
+chmod +x $PREFIX/bin/ninja.py
 
-# Add more build steps here, if they are necessary.
+binaries="\
+ninja_compact \
+ninja_filter \
+ninja_parse_filtered \
+ninja_prep \
+"
 
-# See
-# http://docs.continuum.io/conda/build.html
-# for a list of environment variables that are set during the build process.
-mkdir -p $PREFIX/bin
-echo "Hello, World"
-cp bin/* $PREFIX/bin/
-chmod +x $PREFIX/bin/*
+for i in $binaries; do cp $i $PREFIX/bin/$i && chmod +x $PREFIX/bin/$i; done

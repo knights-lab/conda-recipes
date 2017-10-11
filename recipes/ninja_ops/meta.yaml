@@ -1,11 +1,27 @@
 ﻿package:
   name: ninja_ops
-  version: "0.0.1"
+  version: "1.5.2"
 
 source:
-  git_url: https://github.com/GabeAl/NINJA-OPS
+  fn: linux-64.tar.gz #[linux]
+  url: https://github.com/knights-lab/NINJA-OPS/releases/download/v1.5.2/linux-64.tar.gz #[linux]
+  sha256: d19cf4e45139c13ea14be3346cfab7475d5cc5c106417d27c87d68e6e690880e #[linux]
+  fn: osx-64.tar.gz #[osx]
+  url: https://github.com/knights-lab/NINJA-OPS/releases/download/v1.5.2/osx-64.tar.gz #[osx]
+  sha256: d6fe326acd20c6090a25d7a763531c56375fe59a46951d5b3a24b47d035fdc99 #[osx]
 
 requirements:
+  build:
+  - wget
   run:
-  - python
+  - python >= 2.7
   - bowtie2
+
+about:
+  summary: NINJA Is Not Just Another - OTU Picking Solution -- NINJA-OPS
+  home: https://github.com/knights-lab/NINJA-OPS
+  license: ISC
+
+test:
+  commands:
+  - ninja.py --help
