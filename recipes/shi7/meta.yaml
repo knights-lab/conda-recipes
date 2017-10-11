@@ -1,10 +1,10 @@
 ﻿package:
   name: "shi7"
-  version: "0.9.3"
+  version: "0.9.2"
 
 source:
   git_url: https://github.com/knights-lab/shi7.git
-  git_rev: cd6d6d5208c59c4d74f09eecf17b6d154491e893
+  git_rev: v0.9.2
 
 requirements:
   build:
