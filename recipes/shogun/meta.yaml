@@ -1,10 +1,12 @@
-﻿package:
+﻿{% set version = "1.0.0" %}
+
+package:
   name: shogun
-  version: "1.0.0"
+  version: "{{ version }}"
 
 source:
-  fn: v1.0.0.tar.gz
-  url: https://github.com/knights-lab/SHOGUN/archive/v1.0.0.tar.gz
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/knights-lab/SHOGUN/archive/v{{ version }}.tar.gz
   sha256: 03d8acca5a53c8e5f16a34522e2f017cc44bb3c03fd4d143034f4ac82acd7e40
 
 requirements:

@@ -1,10 +1,12 @@
-﻿package:
+﻿{% set version = "0.9.4" %}
+
+package:
   name: "shi7"
-  version: "0.9.4"
+  version: "{{ version }}"
 
 source:
   git_url: https://github.com/knights-lab/shi7.git
-  git_rev: v0.9.4
+  git_rev: v{{ version }}
 
 requirements:
   build:
