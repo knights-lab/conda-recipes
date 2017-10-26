@@ -1,11 +1,13 @@
-﻿package:
+﻿{% set version = "0.99.5a" %}
+
+package:
   name: burst
-  version: "0.99.4a"
+  version: "{{ version }}"
 
 source:
-  fn: burst-v0.99.4a-linux-64.tar.gz #[linux]
-  url: https://github.com/knights-lab/BURST/releases/download/v0.99.4a/burst-v0.99.4a-linux-64.tar.gz #[linux]
-  sha256: 2249b8e9a1cd11647b1855474e45dba2aefea630707dc5c48297b2ff6680d142 #[linux]
+  fn: burst-{{ version }}-linux-64.tar.gz #[linux]
+  url: https://github.com/knights-lab/BURST/releases/download/{{ version }}/burst-{{ version }}-linux-64.tar.gz #[linux]
+  sha256: ddc8264bf9c960aefa896d0da15d6d940f1880c437cf5ac9bd4525ed4b8026ad #[linux]
 
 requirements:
   build:
