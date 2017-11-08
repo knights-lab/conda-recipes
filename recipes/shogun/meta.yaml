@@ -1,4 +1,4 @@
-﻿{% set version = "1.0.1" %}
+﻿{% set version = "1.0.2" %}
 
 package:
   name: shogun
@@ -7,7 +7,7 @@ package:
 source:
   fn: v{{ version }}.tar.gz
   url: https://github.com/knights-lab/SHOGUN/archive/v{{ version }}.tar.gz
-  sha256: 5204a61b9d3a21bd136b8dcdfde2578ebf94941bc923fee7b4169966418080c6
+  sha256: e6461b06f89bd0c1197294ae8d059b1aa0751533e74e3c218f02c7fa5344e089
 
 requirements:
   build:
