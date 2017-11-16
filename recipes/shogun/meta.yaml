@@ -34,5 +34,6 @@ requirements:
     - bowtie2
 
 about:
+  summary: Accurate, scalable metagenomic quantification with shallow shotgun sequencing
   license: AGPL
   license_file: LICENSE.md
