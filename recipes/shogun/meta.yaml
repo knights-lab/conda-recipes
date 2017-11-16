@@ -7,7 +7,7 @@ package:
 source:
   fn: v{{ version }}.tar.gz
   url: https://github.com/knights-lab/SHOGUN/archive/v{{ version }}.tar.gz
-  sha256: e6461b06f89bd0c1197294ae8d059b1aa0751533e74e3c218f02c7fa5344e089
+  sha256: ea7f23f65da56607a249166d4713eb162b63e7482343abcb74a8a30ebeb2eaa4
 
 requirements:
   build:
