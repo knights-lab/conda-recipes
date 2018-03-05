@@ -6,7 +6,7 @@ package:
 
 source:
   fn: utree-{{ version }}-linux-64.tar.gz #[linux]
-  url: https://github.com/knights-lab/UTree/releases/download/v{{ version }}/utree-{{ version }}-linux-64.tar.gz #[linux]
+  url: https://github.com/knights-lab/UTree/releases/download/v{{ version }}/utree-v{{ version }}-linux-64.tar.gz #[linux]
   sha256: c6f84140ed60c100c6c98370f06be27afd72fc549a2c189482fc1a23d5309e0d #[linux]
 
 requirements:
