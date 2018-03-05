@@ -29,8 +29,8 @@ requirements:
     - cytoolz
     - pandas
     - scipy
-    - utree
-    - burst
+    - utree >= 2.0rf
+    - burst >= 0.99.7f
     - bowtie2
 
 about:
