@@ -1,5 +1,7 @@
 #!/bin/bash
 binaries="\
+utree-search \
+utree-build \
 utree-search_gg \
 utree-build_gg \
 utree-compress \
