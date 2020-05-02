@@ -1,4 +1,4 @@
-﻿{% set version = "0.9.8" %}
+﻿{% set version = "1.0.0" %}
 
 package:
   name: "shi7"
@@ -10,11 +10,10 @@ source:
 
 requirements:
   build:
-    - python >=2.7
+    - python >=3
     - setuptools
-    - gcc # [linux]
   run:
-    - python >=2.7
+    - python >=3
     - trimmomatic
     - flash
 
