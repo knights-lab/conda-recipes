@@ -1,4 +1,4 @@
-﻿{% set version = "1.0.0" %}
+﻿{% set version = "1.0.3" %}
 
 package:
   name: "shi7"
@@ -16,9 +16,6 @@ requirements:
     - python >=3
     - trimmomatic
     - flash
-
-build:
-  number: 0
 
 about:
   summary: SHort-read Iterative Trimmer with Learning Module

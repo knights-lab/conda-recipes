@@ -1,0 +1,43 @@
+﻿{% set version = "0.0.1" %}
+
+package:
+  name: type_1
+  version: "{{ version }}"
+
+source:
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/knights-lab/type_1/archive/v{{ version }}.tar.gz
+  sha256: 5d6b6b910bf0b701c3a98fb96f77136ca5b9c655a630397a23e8149417656d55
+
+build:
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+  - pip
+  - python
+  - setuptools
+  run:
+  - python
+  - numpy
+  - scikit-learn=0.24.1
+  - pandas
+  - scipy
+  - pydantic
+  - typer
+  - pytest
+  - ete3
+  - joblib
+
+about:
+  home: https://github.com/knights-lab/type_1
+  summary: Classifying Reference Genome Presence in Metagenomic Data
+  license: AGPLv3
+  license_family: AGPL
+  license_file: LICENSE.md
+
+extra:
+  recipe-maintainers:
+    - bhillmann
